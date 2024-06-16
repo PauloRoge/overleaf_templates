@@ -1,0 +1,40 @@
+\documentclass{article}
+
+% Pacotes para configurar a formatação do documento
+\usepackage{geometry} % Para definir margens
+\usepackage{titling} % Para ajustar o título
+\usepackage{lipsum} % Para gerar texto de preenchimento
+
+% Configuração das margens
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+% Configuração do título
+\renewcommand{\maketitle}{
+    \begin{center}
+        {\huge\bfseries\thetitle\par}
+        \vspace{0.5em}
+        {\large\theauthor\par}
+        \vspace{0.5em}
+        {\thedate\par}
+    \end{center}
+}
+
+\title{Título do Resumo}
+\author{Paulo Rogerio Alfredo Candido Junior}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Resumo}
+
+% Aqui você escreve seu resumo
+\lipsum[1-2] % Remova esta linha e insira seu próprio texto
+
+\end{document}
